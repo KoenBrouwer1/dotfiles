@@ -1,0 +1,89 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 36,
+  //"exclusive-zone": -1,
+  //"height": 0,
+  "margin-top": 8,
+  "margin-left": 24,
+  "margin-right": 24,
+  "exclusive": true,
+  "gtk-layer-shell": true,
+  "fixed-center": true,
+
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["network", "bluetooth", "pulseaudio", "battery"],
+  "network": {
+  "format-wifi": "\uf1eb {essid}",
+  "format-disconnected": "\uf127 off",
+  "tooltip": false,
+  "on-click": "~/.config/waybar/scripts/wifi.sh"
+},
+
+    "custom/power_profile":{
+        //shows the current power profile and switches to next on click
+        "exec": "asusctl profile -p | sed s:'Active profile is'::",
+        "interval": 30,
+        "format": "󰈐{}", 
+        "on-click": "asusctl profile -n; pkill -SIGRTMIN+8 waybar",
+        "signal": 8
+    },
+
+"bluetooth": {
+  "format": "\uf294",
+  "format-connected": "\uf294 {device_alias}",
+  "tooltip": false,
+  "on-click": "~/.config/waybar/scripts/bluetooth.sh"
+},
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-charging": "\uf0e7 {capacity}%",
+    "format-icons": ["\uf244", "\uf243", "\uf242", "\uf241", "\uf240"],
+    "tooltip": false,
+    "interval": 2,
+  },
+
+  "hyprland/workspaces": {
+    "on-click": "activate",
+    "format": "{id}",
+    "disable-scroll": false,
+  },
+  "tray": {
+    "spacing": 8,
+    "show-passive-items": true,
+  },
+  "clock": {
+    "format": "{:%H:%M:%S}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "interval": 1,
+    "calendar": {
+      "mode": "month",
+      "on-scroll": 1,
+      "format": {
+        "days": "<span weight='normal'>{}</span>",
+        "months": "<span color='#cdd6f4'><b>{}</b></span>",
+        "today": "<span color='#f38ba8'><b>{}</b></span>",
+        "weekdays": "<span color='#f9e2af'><b>{}</b></span>",
+      },
+    },
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "\uf6a9 muted",
+    "format-icons": {
+      "headphones": "\uf58f",
+      "headset": "\uf58f",
+      "default": ["\uf026", "\uf027", "\uf028"]
+    },
+    "on-click": "pavucontrol",
+    "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
+    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+  },
+  "custom/power": {
+    "format": "⏻",
+    "tooltip": false,
+    "on-click": "~/.config/waybar/scripts/power.sh",
+  },
+}

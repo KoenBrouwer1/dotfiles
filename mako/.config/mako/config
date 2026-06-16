@@ -1,0 +1,22 @@
+font=monospace 11
+background-color=#1a1a1a
+text-color=#d4d4d4
+border-color=#f5c2e7
+border-radius=10
+border-size=1
+width=350
+padding=12
+margin=10
+default-timeout=3000
+anchor=top-center
+
+[urgency=low]
+border-color=#a6e3a1
+
+[urgency=normal]
+border-color=#89b4fa
+
+[urgency=high]
+border-color=#f38ba8
+background-color=#1a1a1a
+text-color=#f38ba8

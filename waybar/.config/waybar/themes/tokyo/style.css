@@ -1,0 +1,93 @@
+@import "/home/koenlinux/.cache/wal/colors-waybar.css";
+* {
+  min-height: 0;
+  min-width: 0;
+  font-family: "JetBrainsMono Nerd Font", Lexend;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+window#waybar {
+  background-color: rgba(26, 26, 26, 0.45);
+  border: 1px solid rgba(245, 194, 231, 0.4);
+  border-radius: 65px;
+  margin: 8px 12px;
+}
+
+#clock,
+#pulseaudio,
+#battery,
+#custom-power {
+  padding: 0.15rem 0.6rem;
+  margin: 0.3rem 0.4rem;
+  background: transparent;
+}
+
+#workspaces button {
+  padding: 0.15rem 0.6rem;
+  background: transparent;
+  border: none;
+  color: #45475a;
+  transition: color 0.2s;
+}
+#workspaces button.active {
+  color: #f5c2e7;
+}
+#workspaces button.urgent {
+  color: #f38ba8;
+}
+
+#clock {
+  color: #f5c2e7;
+  border-bottom: 2px solid rgba(245, 194, 231, 0.6);
+  font-size: 14px;
+}
+
+#pulseaudio {
+  color: #f5c2e7;
+  border-bottom: 2px solid rgba(245, 194, 231, 0.6);
+}
+#pulseaudio.muted {
+  color: #45475a;
+  border-bottom: 2px solid #45475a;
+}
+
+#battery {
+  color: #a6e3a1;
+  border-bottom: 2px solid rgba(166, 227, 161, 0.6);
+}
+#battery.critical {
+  color: #f38ba8;
+  border-bottom: 2px solid rgba(243, 139, 168, 0.6);
+}
+#battery.charging {
+  color: #89b4fa;
+  border-bottom: 2px solid rgba(137, 180, 250, 0.6);
+}
+
+#custom-power {
+  color: #f38ba8;
+  margin-right: 16px;
+  border-bottom: 2px solid rgba(243, 139, 168, 0.6);
+}
+
+tooltip {
+  background-color: rgba(24, 24, 37, 0.9);
+  border: 1px solid #313244;
+}
+#network,
+#bluetooth {
+  padding: 0.15rem 0.6rem;
+  margin: 0.3rem 0.4rem;
+  background: transparent;
+  color: #45475a;
+  border-bottom: 2px solid #45475a;
+}
+#network.wifi {
+  color: #89b4fa;
+  border-bottom: 2px solid #89b4fa;
+}
+#bluetooth.connected {
+  color: #89b4fa;
+  border-bottom: 2px solid #89b4fa;
+}

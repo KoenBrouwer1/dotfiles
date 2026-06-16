@@ -1,0 +1,64 @@
+* {
+  background-color: transparent;
+  text-color:       #cdd6f4;
+  border-color:     rgba(245, 194, 231, 0.8);
+  font:             "JetBrainsMono Nerd Font 13";
+}
+
+window {
+  width:            480px;
+  border:           1px;
+  border-radius:    12px;
+  background-color: rgba(26, 26, 26, 0.95);
+}
+
+mainbox {
+  padding: 12px;
+  spacing: 8px;
+}
+
+inputbar {
+  background-color: rgba(245, 194, 231, 0.1);
+  border:           1px;
+  border-color:     rgba(245, 194, 231, 0.6);
+  border-radius:    8px;
+  padding:          8px 12px;
+  children:         [prompt, entry];
+}
+
+prompt {
+  text-color: #f5c2e7;
+  padding:    0 6px 0 0;
+}
+
+entry {
+  text-color:        #cdd6f4;
+  placeholder:       "search...";
+  placeholder-color: #585b70;
+}
+
+listview {
+  lines:     8;
+  padding:   4px 0;
+  spacing:   4px;
+  scrollbar: false;
+}
+
+element {
+  padding:          10px 14px;
+  border-radius:    8px;
+  background-color: rgba(245, 194, 231, 0.05);
+  text-color:       #bac2de;
+}
+
+element selected {
+  background-color: rgba(245, 194, 231, 0.2);
+  text-color:       #f5c2e7;
+  border:           1px;
+  border-color:     rgba(245, 194, 231, 0.6);
+}
+
+element-text {
+  background-color: transparent;
+  text-color:       inherit;
+}
