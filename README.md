@@ -1,6 +1,7 @@
 ## Hi there :)
+### this is a very eazy install
 
-1. this is an eazy install copy my dotfiles
+1. copy my dotfiles
 ```sh
 cd
 git clone git@github.com:KoenBrouwer1/dotfiles.git

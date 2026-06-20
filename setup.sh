@@ -12,12 +12,12 @@ rm -rf ~/.config/zed
 
 cd ~/dotfiles
 
-stow -t ~/.config/fastfetch fastfetch
-stow -t ~/.config/fish fish
-stow -t ~/.config/hyprland hyprland
-stow -t ~/.config/kitty kitty
-stow -t ~/.config/mako mako
-stow -t ~/.config/nvim nvim
-stow -t ~/.config/rofi rofi
-stow -t ~/.config/waybar waybar
-stow -t ~/.config/zed zed
+stow fastfetch
+stow fish
+stow hyprland
+stow kitty
+stow mako
+stow nvim
+stow rofi
+stow waybar
+stow zed
