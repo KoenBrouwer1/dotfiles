@@ -1,21 +1,30 @@
 # ~/.config/fish/config.fish
 set -U fish_greeting ""
 # Prompt (fish has own prompt system, use this or run fish_config)
-function fish_prompt
-    set_color brmagenta
-    echo -n (whoami)
-    set_color brred
-    echo -n '@'
-    set_color brmagenta
-    echo -n (hostname)
-    set_color brred
-    echo -n ':'(prompt_pwd)
-    set_color normal
-    echo -n ' '
-    set_color brmagenta
-    echo -n '➤ '
-    set_color normal
-end
+# function fish_prompt
+#     set_color --background=303446 white
+#     echo -n ' ' (whoami) ' '
+#     set_color --background=eba0ac 303446
+#     echo -n ''
+#     set_color --background=eba0ac 303446
+#     echo -n ' '
+#     set_color --background=a6e3a1 303446
+#     echo -n (prompt_pwd)
+#     set_color --background=a6e3a1 303446
+#     echo -n ' '
+#     set_color --background=89b4fa 303446
+#     echo -n ''
+#     set_color --background=89b4fa black
+#     echo -n ' '
+#     set_color --background=f5c2e7 89b4fa
+#     echo -n ''
+#     set_color --background=f5c2e7 black
+#     echo -n ' ' (date '+%H:%M') ' '
+#     set_color normal --background=normal
+#     echo -n ''
+#     set_color normal
+#     echo -n ' '
+# end
 
 # PATH
 fish_add_path $HOME/.local/bin $HOME/bin ~/go/bin
