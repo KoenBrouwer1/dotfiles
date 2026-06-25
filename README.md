@@ -57,4 +57,3 @@ NixOs packages V
   pkgs.hyprshot
   pkgs.brave
 ```
-```
