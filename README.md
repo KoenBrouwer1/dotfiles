@@ -26,34 +26,3 @@ chmod +x setup.sh
 
 and you should be done
 
-NixOs packages V
-
-```
-  pkgs.fastfetch
-  pkgs.fish
-  pkgs.hyprland
-  pkgs.kitty
-  pkgs.mako
-  pkgs.neovim
-  pkgs.rofi
-  pkgs.waybar
-  pkgs.zed-editor
-  pkgs.stow
-
-  pkgs.swww
-  pkgs.networkmanagerapplet
-  pkgs.blueman
-  pkgs.grim
-  pkgs.wl-clipboard
-  pkgs.wireplumber
-  pkgs.brightnessctl
-  pkgs.playerctl
-  pkgs.hyprlock
-  pkgs.dolphin
-  pkgs.wofi
-  pkgs.flatpak
-
-  pkgs.pywal
-  pkgs.hyprshot
-  pkgs.brave
-```
