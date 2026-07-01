@@ -21,4 +21,4 @@ cp -r ~/dotfiles/nvim/.config/nvim ~/.config/nvim
 cp -r ~/dotfiles/rofi/.config/rofi ~/.config/rofi
 cp -r ~/dotfiles/waybar/.config/waybar ~/.config/waybar
 cp -r ~/dotfiles/zed/.config/zed ~/.config/zed
-mkdir -p ~/wallsdd
+cp -r ~/dotfiles/walls ~/walls
