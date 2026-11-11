@@ -1,0 +1,98 @@
+/* Catppuccin Mocha */
+@define-color black    #000000;
+@define-color base     #ffffff;
+@define-color mantle   #181825;
+@define-color surface0 #313244;
+@define-color overlay0 #6c7086;
+@define-color text     #cdd6f4;
+@define-color blue     #89b4fa;
+@define-color sapphire #74c7ec;
+@define-color teal     #94e2d5;
+@define-color green    #a6e3a1;
+@define-color yellow   #f9e2af;
+@define-color peach    #fab387;
+@define-color red      #f38ba8;
+@define-color mauve    #cba6f7;
+@define-color pink     #f5c2e7;
+@define-color lavender #b4befe;
+
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 13px;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 1 3px;
+}
+#power-profiles-daemon.performance { color: @red; }
+#power-profiles-daemon.balanced    { color: @blue; }
+#power-profiles-daemon.power-saver { color: @green; }
+
+window#waybar
+    {
+    background: @black;
+    color: @text;
+}
+#mpris {
+    background: transparent;
+    color: @text;
+    /*padding: 0 0 1px 0;*/
+}
+#mpris.paused {
+    background: transparent;
+    /*border-bottom: 1px solid @text;*/
+    /*padding-top: 1px;*/
+}
+
+/*#mpris {
+    padding: 0 8px;
+    background: transparent;
+    color: @text;
+    border-bottom: 1px solid @pink;
+}
+#mpris.paused {
+    background: transparent;
+    border-bottom: 1px solid @base;
+    color: @base;
+}*/
+/* dwm tags */
+#workspaces button {
+    padding: 0 8px;
+    color: @overlay0;
+    background: transparent;
+}
+#workspaces button:not(.empty) { color: @text; }
+#workspaces button.active {
+    background: @mauve;
+    color: @base;
+}
+#workspaces button.urgent {
+    background: @red;
+    color: @base;
+}
+#workspaces button:hover {
+    background: @surface0;
+    color: @text;
+}
+
+/* title */
+#window { color: @text; }
+
+
+/* states */
+#network.disconnected { background: @red; }
+#pulseaudio.muted     { background: @overlay0; color: @text; }
+
+#battery {
+    background: transparent;
+    color: @text;
+}
+
+#battery.warning  { color: @yellow; }
+#battery.critical { color: @red; }
+#battery.charging,
+#battery.plugged,
+#battery.full {
+    color: @green;
+}

@@ -1,0 +1,43 @@
+@define-color black    #000000;
+@define-color surface0 #313244;
+@define-color text     #cdd6f4;
+@define-color pink     #f5c2e7;
+@define-color overlay0 #6c7086;
+
+window#osd {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid @pink;
+    border-radius: 0;
+    padding: 12px 16px;
+}
+window#osd #container {
+    margin: 8px;
+}
+
+window#osd image,
+window#osd label {
+    color: @text;
+}
+
+window#osd progressbar:disabled,
+window#osd image:disabled {
+    opacity: 0.4;
+}
+
+window#osd progressbar {
+    min-height: 6px;
+    border-radius: 0;
+    background: transparent;
+}
+
+window#osd trough {
+    min-height: 6px;
+    border-radius: 0;
+    background: @surface0;
+}
+
+window#osd progress {
+    min-height: 6px;
+    border-radius: 0;
+    background: @pink;
+}
